@@ -1,0 +1,102 @@
+body {
+    font-family: "Segoe UI", Helvetica, Verdana;
+    min-width: 520px;
+    font-size: 75%;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.header {
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+.h2 {
+    font-size: 1.5em;
+}
+
+.column-container {
+    width: 20%;
+    float: left;
+}
+
+.column {    
+    padding-bottom: 100px;
+    background-color: transparent !important;
+}
+
+.column-header {
+    padding: 0 0 0 0.2em;
+    margin: 2em 0 1.5em;
+}
+
+.portlet {
+    margin: 0 1em 1em 0;
+}
+
+.portlet-header {
+    margin: .3em;
+    padding: .2em .3em .3em;
+    color: #fff;
+    font-weight: 400;
+}
+
+.portlet-header .ui-icon {
+    float: right;
+}
+
+.portlet-content {
+    padding: .4em .5em 1em;
+}
+
+.ui-sortable-placeholder {
+    border: 1px dotted #000;
+    visibility: visible !important;
+    height: 50px !important;
+}
+
+.ui-sortable-placeholder * {
+    visibility: hidden;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
+
+footer {
+    clear: both;
+}
+
+.add-button {
+    cursor:pointer;
+    display:inline-block;
+    margin-left: 0.5em;
+    vertical-align: -9%;
+    border: 1px solid #bdc3c7;
+}
+
+.class1 {
+    background-color: #3498db;
+}
+
+.class2 {
+    background-color: #8e44ad;
+}
+
+.class3 {
+    background-color: #16a085;
+}
+
+.class-pause {
+    background-color: #e67e22;
+}
+
+.class-doing {
+    background-color: #e74c3c;
+}
+
+.class-done {
+    background-color: #95a5a6;
+}

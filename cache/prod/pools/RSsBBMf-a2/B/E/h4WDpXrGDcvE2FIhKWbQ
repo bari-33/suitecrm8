@@ -1,0 +1,3 @@
+<?php //route_name_55dc2d33cc29be615e44d04b78d50fa8
+
+return [PHP_INT_MAX, 'api_module_metadatas_get_item'];

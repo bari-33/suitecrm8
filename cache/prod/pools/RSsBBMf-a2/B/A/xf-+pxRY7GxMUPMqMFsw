@@ -1,0 +1,3 @@
+<?php //route_name_7bb586ecfbdd313627b120c74a7251bd
+
+return [PHP_INT_MAX, 'api_record_lists_get_item'];

@@ -1,0 +1,3 @@
+<?php //route_name_3cf15acc7301c74a902ed003cdc89b64
+
+return [PHP_INT_MAX, 'api_app_strings_get_item'];

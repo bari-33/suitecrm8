@@ -1,0 +1,286 @@
+Mon Dec  5 10:03:26 2022 [3736][1][SECURITY] OutboundEmail::checkSavePermissions - not logged in - skipping check
+Mon Dec  5 10:03:26 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID 1, boolean given
+Mon Dec  5 10:03:26 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_jim_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_sarah_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_sally_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_max_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_will_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] User update error: Temp User is not retrieved at ID seed_chris_id, boolean given
+Mon Dec  5 10:03:33 2022 [3736][1][FATAL] Email address save error
+Wed Dec  7 09:00:23 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:00:23 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Wed Dec  7 09:01:19 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:01:19 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Wed Dec  7 09:02:45 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:02:45 2022 [14824][1][FATAL]  Query Failed: SHOW COLUMNS FROM ht_kanban_views LIKE 'kanban_where': MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:02:45 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:02:45 2022 [14824][1][FATAL]  Query Failed: ALTER TABLE ht_kanban_views ADD COLUMN `kanban_where` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:03:06 2022 [14824][1][FATAL] SugarOutfitters_API::call(): HTTP Request failed: Array
+(
+    [url] => https://store.suitecrm.com/api/v1/key/validate?key=86f78c93af26a861e2a03dc626b115d9&public_key=2cde92325e6e7b5b5b7f0fde75188566&user_count=7&group_user_count=0&admin_user_count=1&sugar_edition=CE&db_type=mysql&developerMode=false&host_name=localhost&package_scan=false&sugar_version=not+set&site_url=http%3A%2F%2Flocalhost%2F&addon_version=No+Versions+Found
+    [content_type] => application/json
+    [http_code] => 400
+    [header_size] => 432
+    [request_size] => 385
+    [filetime] => -1
+    [ssl_verify_result] => 20
+    [redirect_count] => 0
+    [total_time] => 1.842603
+    [namelookup_time] => 0.912206
+    [connect_time] => 0.95143
+    [pretransfer_time] => 1.592478
+    [size_upload] => 0
+    [size_download] => 21
+    [speed_download] => 11
+    [speed_upload] => 0
+    [download_content_length] => 21
+    [upload_content_length] => -1
+    [starttransfer_time] => 1.842573
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.223.35.31
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 192.168.0.56
+    [local_port] => 62799
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 1592189
+    [connect_time_us] => 951430
+    [namelookup_time_us] => 912206
+    [pretransfer_time_us] => 1592478
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 1842573
+    [total_time_us] => 1842603
+)
+
+Wed Dec  7 09:03:06 2022 [14824][1][FATAL] htKanbanOutfittersLicense::doValidate() failed: Array
+(
+    [success] => 
+    [result] => Key does not exist.
+)
+
+Wed Dec  7 09:03:14 2022 [14824][1][FATAL] SugarOutfitters_API::call(): HTTP Request failed: Array
+(
+    [url] => https://store.suitecrm.com/api/v1/key/validate?key=86f78c93af26a861e2a03dc626b115d9&public_key=2cde92325e6e7b5b5b7f0fde75188566&user_count=7&group_user_count=0&admin_user_count=1&sugar_edition=CE&db_type=mysql&developerMode=false&host_name=localhost&package_scan=false&sugar_version=not+set&site_url=http%3A%2F%2Flocalhost%2F&addon_version=No+Versions+Found
+    [content_type] => application/json
+    [http_code] => 400
+    [header_size] => 432
+    [request_size] => 385
+    [filetime] => -1
+    [ssl_verify_result] => 20
+    [redirect_count] => 0
+    [total_time] => 1.654622
+    [namelookup_time] => 0.726682
+    [connect_time] => 0.771083
+    [pretransfer_time] => 1.410736
+    [size_upload] => 0
+    [size_download] => 21
+    [speed_download] => 12
+    [speed_upload] => 0
+    [download_content_length] => 21
+    [upload_content_length] => -1
+    [starttransfer_time] => 1.654594
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.223.35.31
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 192.168.0.56
+    [local_port] => 62807
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 1410627
+    [connect_time_us] => 771083
+    [namelookup_time_us] => 726682
+    [pretransfer_time_us] => 1410736
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 1654594
+    [total_time_us] => 1654622
+)
+
+Wed Dec  7 09:03:14 2022 [14824][1][FATAL] htKanbanOutfittersLicense::doValidate() failed: Array
+(
+    [success] => 
+    [result] => Key does not exist.
+)
+
+Wed Dec  7 09:16:36 2022 [14824][1][FATAL] SugarOutfitters_API::call(): HTTP Request failed: Array
+(
+    [url] => https://store.suitecrm.com/api/v1/key/validate?key=86f78c93af26a861e2a03dc626b115d9&public_key=2cde92325e6e7b5b5b7f0fde75188566&user_count=7&group_user_count=0&admin_user_count=1&sugar_edition=CE&db_type=mysql&developerMode=false&host_name=localhost&package_scan=false&sugar_version=not+set&site_url=http%3A%2F%2Flocalhost%2F&addon_version=No+Versions+Found
+    [content_type] => application/json
+    [http_code] => 400
+    [header_size] => 432
+    [request_size] => 385
+    [filetime] => -1
+    [ssl_verify_result] => 20
+    [redirect_count] => 0
+    [total_time] => 1.397139
+    [namelookup_time] => 0.466704
+    [connect_time] => 0.50686
+    [pretransfer_time] => 1.150501
+    [size_upload] => 0
+    [size_download] => 21
+    [speed_download] => 15
+    [speed_upload] => 0
+    [download_content_length] => 21
+    [upload_content_length] => -1
+    [starttransfer_time] => 1.397094
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.223.35.31
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 192.168.0.56
+    [local_port] => 51135
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 1150379
+    [connect_time_us] => 506860
+    [namelookup_time_us] => 466704
+    [pretransfer_time_us] => 1150501
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 1397094
+    [total_time_us] => 1397139
+)
+
+Wed Dec  7 09:16:36 2022 [14824][1][FATAL] htKanbanOutfittersLicense::doValidate() failed: Array
+(
+    [success] => 
+    [result] => Key does not exist.
+)
+
+Wed Dec  7 09:19:21 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:19:21 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Wed Dec  7 09:19:54 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:19:54 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN ht_kanban_views ON ( ht_kanban_views.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'ht_kanban_views'
+                    AND favorites.deleted = 0
+                    AND ht_kanban_views.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:19:58 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:19:58 2022 [14824][1][FATAL]  Query Failed:  SELECT  ht_kanban_views.id , ht_kanban_views.modified_user_id , ht_kanban_views.created_by , ht_kanban_views.assigned_user_id , ht_kanban_views.name , ht_kanban_views.date_entered , ht_kanban_views.date_modified  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod, ht_kanban_views.description , ht_kanban_views.deleted  , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, ht_kanban_views.flow_module , ht_kanban_views.module_fields , ht_kanban_views.module_calculation_fields , ht_kanban_views.aggregate_function , ht_kanban_views.body_fields , ht_kanban_views.status , ht_kanban_views.menu_display , ht_kanban_views.target_values , ht_kanban_views.aggregated_fields_data , ht_kanban_views.kanban_where  FROM ht_kanban_views   LEFT JOIN  users jt0 ON ht_kanban_views.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON ht_kanban_views.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON ht_kanban_views.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where ht_kanban_views.deleted=0 LIMIT 0,21: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:20:31 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:20:31 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN ht_kanban_views ON ( ht_kanban_views.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'ht_kanban_views'
+                    AND favorites.deleted = 0
+                    AND ht_kanban_views.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:21:05 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:21:05 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN ht_kanban_views ON ( ht_kanban_views.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'ht_kanban_views'
+                    AND favorites.deleted = 0
+                    AND ht_kanban_views.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 09:21:07 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 09:21:07 2022 [14824][1][FATAL]  Query Failed:  SELECT  ht_kanban_views.id , ht_kanban_views.modified_user_id , ht_kanban_views.created_by , ht_kanban_views.assigned_user_id , ht_kanban_views.name , ht_kanban_views.date_entered , ht_kanban_views.date_modified  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod, ht_kanban_views.description , ht_kanban_views.deleted  , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, ht_kanban_views.flow_module , ht_kanban_views.module_fields , ht_kanban_views.module_calculation_fields , ht_kanban_views.aggregate_function , ht_kanban_views.body_fields , ht_kanban_views.status , ht_kanban_views.menu_display , ht_kanban_views.target_values , ht_kanban_views.aggregated_fields_data , ht_kanban_views.kanban_where  FROM ht_kanban_views   LEFT JOIN  users jt0 ON ht_kanban_views.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON ht_kanban_views.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON ht_kanban_views.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where ht_kanban_views.deleted=0 LIMIT 0,21: MySQL error 1146: Table 'suitecrm8.ht_kanban_views' doesn't exist
+Wed Dec  7 13:22:43 2022 [14824][1][SECURITY] Email Error: Not authorized to use Outbound Account "system"
+Wed Dec  7 13:22:43 2022 [14824][1][SECURITY] User Administrator attempted to send an email using incorrect email account settings in which they do not have access to.
+Wed Dec  7 13:23:47 2022 [14824][1][FATAL] Mysqli_query failed.
+Wed Dec  7 13:23:47 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Thu Dec  8 07:41:01 2022 [14824][1][FATAL] Mysqli_query failed.
+Thu Dec  8 07:41:01 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Thu Dec  8 07:44:00 2022 [14824][1][FATAL] Mysqli_query failed.
+Thu Dec  8 07:44:00 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Thu Dec  8 07:53:31 2022 [14824][1][FATAL] Mysqli_query failed.
+Thu Dec  8 07:53:31 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Thu Dec  8 08:10:40 2022 [14824][1][FATAL] Mysqli_query failed.
+Thu Dec  8 08:10:40 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'

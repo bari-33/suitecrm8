@@ -1,0 +1,3 @@
+<?php //route_name_1b5ae94848fa43fd2b92649f8dacb173
+
+return [PHP_INT_MAX, 'api_system_configs_get_item'];
