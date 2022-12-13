@@ -1,5 +1,5 @@
 <?php
-// created: 2022-12-08 08:11:04
+// created: 2022-12-09 11:34:04
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Groups',
   'LBL_GROUP_NAME' => 'Group Name:',

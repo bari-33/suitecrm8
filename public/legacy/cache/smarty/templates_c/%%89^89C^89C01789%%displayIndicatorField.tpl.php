@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.33, created on 2022-12-08 08:11:05
+<?php /* Smarty version 2.6.33, created on 2022-12-09 11:34:06
          compiled from modules/Emails/templates/displayIndicatorField.tpl */ ?>
 
 <div class="email-indicator">

@@ -284,3 +284,39 @@ Thu Dec  8 08:10:40 2022 [14824][1][FATAL]  Query Failed: SELECT favorites.*
                     AND favorites.deleted = 0
                     AND config.deleted = 0
                   ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Fri Dec  9 11:23:11 2022 [7744][1][FATAL] Mysqli_query failed.
+Fri Dec  9 11:23:11 2022 [7744][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Fri Dec  9 11:26:32 2022 [7744][1][FATAL] Mysqli_query failed.
+Fri Dec  9 11:26:32 2022 [7744][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Fri Dec  9 11:27:51 2022 [7744][1][FATAL] Mysqli_query failed.
+Fri Dec  9 11:27:51 2022 [7744][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
+Fri Dec  9 11:31:53 2022 [7744][1][FATAL] Mysqli_query failed.
+Fri Dec  9 11:31:53 2022 [7744][1][FATAL]  Query Failed: SELECT favorites.*
+                  FROM favorites
+                  JOIN config ON ( config.id = favorites.parent_id )
+                  WHERE favorites.assigned_user_id = '1'
+                    AND favorites.parent_type = 'Administration'
+                    AND favorites.deleted = 0
+                    AND config.deleted = 0
+                  ORDER BY favorites.date_entered DESC LIMIT 0,10: MySQL error 1054: Unknown column 'config.deleted' in 'where clause'
